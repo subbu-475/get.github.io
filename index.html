@@ -12,12 +12,15 @@
     <div id="header">
         <div class="container">
             <nav>
-                <p id="full-l"><span id="first-l">S</span>ubbu.</p>
+                <div>
+                    <img id="www" src="./icons/world-wide-web.ico">
+                    <p id="full-l"><span id="first-l">S</span>ubbu.</p>
+                </div>
                 <ul id="side-menu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <img src="./icons/close.ico" id="close-ico" class="fa-regular fa-circle-xmark" onclick="closemenu()">
                 </ul>
@@ -38,7 +41,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p id="about-para">I am a working professional. I'm much more interested in website development and programming. Through the courses, I have gained a lot of knowledges about web development and the Python programming language. I am putting a lot of effort into my passion for web development <span><img src="./icons/cardiogram.ico" id="heart-icon"></span> and programming.</p>
+                    <p id="about-para">I am a working professional. I'm much more interested in website development and programming. Through the courses, I have gained a lot of knowledges about web development and the Python programming language. I am putting a lot of effort into my passion for web development <span><img src="./icons/heart.ico" id="heart-icon"></span> and programming.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -79,11 +82,36 @@
                     <img src="./icons/frontend.ico" class="fa-solid fa-code">
                     <h2>web design Frontend</h2>
                     <ul>
-                        <li><img src="./icons/html.ico"><span class="skill-align">HTML</span></li>
-                        <li><img src="./icons/css.ico"><span class="skill-align">CSS</span></li>
-                        <li><img src="./icons/js.ico" class="js-img"><span class="skill-align">Javascript</span></li>
-                        <li><img src="./icons/jquery.ico" class="js-img"><span class="skill-align">jQuery</span></li>
-                        <li><img src="./icons/bootstrap.ico" class="js-img"><span class="skill-align">Bootstrap</span></li>
+                        <li>
+                            <div>
+                                <img src="./icons/html.ico" class="allign-img ">
+                                <p class="skill-align">HTML</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./icons/css.ico" class="allign-img">
+                                <p class="skill-align">CSS</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./icons/js.ico" class="js-img allign-img">
+                                <p class="skill-align">Javascript</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./icons/jquery.ico" class="js-img allign-img">
+                                <p class="skill-align">jQuery</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./icons/bootstrap.ico" class="js-img allign-img">
+                                <p class="skill-align">Bootstrap</p>
+                            </div>
+                        </li>
                     </ul>
                     
                 </div>
@@ -102,7 +130,7 @@
                 <div>
                     <img src="./icons/python.ico" id="py-ico">
                     <h2>Python Developer</h2>
-                    <p>I have much more knowledge about python programming<br>
+                    <p id="python-desc">I have much more knowledge about python programming<br>
                         and completed python course. Make application with tkinter is my best.
                     </p>
                     
@@ -113,30 +141,30 @@
     <!--portfolio-->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title">Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="./images/work-1.png">
+                    <img src="./images/age cal.jpg">
                     <div class="layer">
-                        <h3>social media apps</h3>
-                        <p>sdfdsfsdfdfsdfd</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Age calculator</h3>
+                        <p>Which shows a age of the perston till now<br>as per entered birth date and time.</p>
+                        <a href="./projects/Age calculator/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="./images/work-2.png">
+                    <img src="./images/drumkit.png">
                     <div class="layer">
-                        <h3>social media apps</h3>
-                        <p>sdfdsfsdfdfsdfd</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Drum kit project</h3>
+                        <p>In this project, the keys you pressed will produced appropriate sound<br>which mentioned in the image. </p>
+                        <a href="./projects/Drum Kit Starting Files/index.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="./images/work-3.png">
+                    <img src="./images/dice.png">
                     <div class="layer">
-                        <h3>social media apps</h3>
-                        <p>sdfdsfsdfdfsdfd</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Dice game project</h3>
+                        <p>In this project, show two players were participated in the game.<br>while we refresh,the dice also refreshed and announce who is the winner.</p>
+                        <a href="./projects/Dicee Challenge - Starting Files/dicee.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -156,7 +184,7 @@
                     <a href="#"><img src="./icons/linkedin.ico" class="fa-brands fa-linkedin"></a>
                     <a href="#"><img src="./icons/github.ico" class="fa-brands fa-github"></a>
                 </div>
-                <a href="./images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                <a href="./CV/Subramani's Resume_13.06.2023.pdf" download class="btn btn2">Download CV</a>
             </div>
         </div>
     </div>
